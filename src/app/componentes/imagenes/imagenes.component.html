@@ -1,5 +1,5 @@
 <p>{{name}}</p>
-<img width="200" src="{{name}}" *ngIf="name; else elseName">  <!--en este formato o [src]="name" ambos son validos-->
+<img width="200" (error)="imgError()" src="{{name}}" *ngIf="name; else elseName">  <!--en este formato o [src]="name" ambos son validos-->
 <ng-template #elseName>
     <img width="200" src="https://media.istockphoto.com/id/1384268358/es/vector/bebida-caliente-icono-de-taza-de-caf%C3%A9-vector-stock-illustration-design-template.webp?s=2048x2048&w=is&k=20&c=A5RjkGEdgo8tCUIszg1G9O_LqeCzPQt1zyPuBuBPtPQ=">
 </ng-template>

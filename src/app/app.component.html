@@ -1,2 +1,5 @@
 <input type="text" [(ngModel)]="name"/>   <!---databinding[xxxx]-->
 <app-imagenes name="{{name}}"></app-imagenes>
+<app-output (loaded)="onLoaded($event)" name="{{name}}"></app-output>
+
+<app-producto [productio]="producta" *ngFor="let producta of products"></app-producto>
